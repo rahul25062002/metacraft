@@ -1,7 +1,7 @@
 # metacraft
 
 Custom Token Contract
-This Solidity smart contract implements a custom token called "Rahul" with the symbol "rk". Initially, the total supply is set to 0.
+This Solidity smart contract implements a custom token called "Rahul" with the symbol "Rahultoken". Initially, the total supply is set to 0.
 
 Functions
 Mint
