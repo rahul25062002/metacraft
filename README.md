@@ -1,23 +1,25 @@
-# metacraft
+# MyToken - Simple Ethereum Token Contract
 
-Custom Token Contract
-This Solidity smart contract implements a custom token called "Rahul" with the symbol "Rahultoken". Initially, the total supply is set to 0.
+MyToken is a basic Ethereum smart contract that represents a simple token. This contract allows you to mint (create) and burn (destroy) tokens. It includes basic functionality to manage token balances for different addresses.
 
-Functions
-Mint
-The mint function allows the owner to create new tokens and assign them to a specific address.
+## Contract Details
 
-Parameters
-address _address: The recipient's address.
-uint _value: The amount of tokens to mint.
-Burn
-The burn function enables the owner to remove existing tokens from a specific address.
+- **Name:** MyToken
+- **Token Name:** Rahul
+- **Token Symbol:** rahulToken
 
-Parameters
-address _address: The address from which the tokens will be burned.
-uint _value: The amount of tokens to burn.
-Usage
-Deploy the contract on a compatible Ethereum Virtual Machine (EVM).
-Use a compatible interface like Remix or Truffle to interact with the contract.
-Call the mint function to create new tokens.
-Call the burn function to destroy existing tokens.
+## Features
+
+The MyToken contract includes the following features:
+
+1. **Minting Tokens**: You can mint (create) tokens and assign them to a specific Ethereum address. The total supply of tokens is increased, and the balance of the address is updated accordingly.
+
+2. **Burning Tokens**: You can burn (destroy) tokens held by a specific Ethereum address. The total supply of tokens is decreased, and the balance of the address is reduced accordingly.
+
+## Smart Contract Functions
+
+The contract includes the following functions:
+
+- `mint(address _address, uint _value)`: This function allows you to mint a specified number of tokens and assign them to a given Ethereum address. The function increases the total token supply and updates the balance of the address.
+
+- `burn(address _address, uint _value)`: This function allows you to burn a specified number of tokens held by a given Ethereum address. The function reduces the total token supply and decreases the balance of the address. It performs a check to ensure that the address has enough tokens to burn before proceeding.
